@@ -55,6 +55,14 @@ header h2 {
   filter: invert(1);
 }
 
+@keyframes smoothFade {
+  to {opacity: 0.5;}
+}
+
+.beleg {
+  animation: smoothFade 3s infinite linear alternate-reverse;
+}
+
 @media (max-width: 950px) {
   .container .beleg {
     width: 85%;
