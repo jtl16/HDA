@@ -23,8 +23,8 @@ var end = new Date('11/01/2025 12:00 AM');
 
         document.getElementById('countdown').innerHTML = (days >= 10 ? days : '0' + days) + 'd ';
         document.getElementById('countdown').innerHTML = (hours >= 10 ? hours : '0' + hours) + 'h ';
-        document.getElementById('countdown').innerHTML = (minutes >= 10 ? minutes : '0' + minutes) + 'd ';
-        document.getElementById('countdown').innerHTML = (seconds >= 10 ? seconds : '0' + seconds) + 'd ';
+        document.getElementById('countdown').innerHTML = (minutes >= 10 ? minutes : '0' + minutes) + 'm ';
+        document.getElementById('countdown').innerHTML = (seconds >= 10 ? seconds : '0' + seconds) + 's ';
 
 
     timer = setInterval(showRemaining, 1000);
