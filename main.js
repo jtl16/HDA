@@ -21,10 +21,10 @@ var end = new Date('11/01/2025 12:00 AM');
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
 
-        document.getElementById('countdown').innerHTML = days + ':';
-        document.getElementById('countdown').innerHTML += hours + ':';
-        document.getElementById('countdown').innerHTML += minutes + ':';
-        document.getElementById('countdown').innerHTML += seconds;
-    }
+        document.getElementById('countdown').innerHTML = (days >= 10 ? days : '0' + days) + 'd ';
+        document.getElementById('countdown').innerHTML = (hours >= 10 ? hours : '0' + hours) + 'h ';
+        document.getElementById('countdown').innerHTML = (minutes >= 10 ? minutes : '0' + minutes) + 'd ';
+        document.getElementById('countdown').innerHTML = (seconds >= 10 ? seconds : '0' + seconds) + 'd ';
+
 
     timer = setInterval(showRemaining, 1000);
